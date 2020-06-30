@@ -1,6 +1,6 @@
 {
   "name": "n2_flatbuffers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Memory Efficient Serialization Library",
   "main": "js/flatbuffers",
   "scripts": {
