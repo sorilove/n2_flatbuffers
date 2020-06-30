@@ -6,6 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "sorilove",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorilove/n2_flatbuffers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sorilove/n2_flatbuffers/issues"
+  },
+  "homepage": "https://github.com/sorilove/n2_flatbuffers#readme"
 }
