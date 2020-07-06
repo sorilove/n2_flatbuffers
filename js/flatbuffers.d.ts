@@ -225,13 +225,20 @@ declare global {
        * @param obj 
        * @returns The offset
        */
-      createObjectOffset(obj): number;
+      createObjectOffset(obj): Offset;
 
       /**
        * by sorilove
        * @param list 
        */
-      createObjectOffsetList(list): number[];
+      createObjectOffsetList(list): Offset[];
+
+      /**
+       * by sorilove
+       * @param list 
+       * @param startFunc 
+       */
+      createStructOffsetList(list: any[], startFunc: any): Offset;
     }
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -321,27 +328,33 @@ declare global {
        */
       createLong(low: number, high: number): Long;
 
+      /**
+       * by sorilove
+       * @param o 
+       * @param offset 
+       */
+      __union_with_string(o: flatbuffers.Table | string, offset: number): any;
 
       /**
        * by sorilove
        * @param listAccessor 
        * @param listLength 
        */
-      createScalarList(listAccessor: number, listLength: number): any[];
+      createScalarList(listAccessor: any, listLength: number): any[];
 
       /**
        * by sorilove
        * @param listAccessor 
        * @param listLength 
        */
-      createStringList(listAccessor: number, listLength: number): string[];
+      createStringList(listAccessor: any, listLength: number): any[];
 
       /**
        * by sorilove
        * @param listAccessor 
        * @param listLength 
        */
-      createObjList(listAccessor: number, listLength: number): any[];
+      createObjList(listAccessor: any, listLength: number): any[];
     }
   }
 }
